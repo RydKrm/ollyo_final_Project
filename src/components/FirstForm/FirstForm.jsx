@@ -32,6 +32,7 @@ const FirstForm = () => {
             .required('Required'),
           email: Yup.string()
             .max(20, 'Must be 20 characters or less')
+            .min(5,'Minimum 5 character needed ')
             .required('Required'),
           phone: Yup.string()
             .max(13,'Invalid email address')
